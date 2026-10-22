@@ -23,7 +23,7 @@ jobs:
           java-version: '17'
 
       - name: Configura Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Applica correzione trackpad
         run: python3 apply_trackpad_fix.py .
