@@ -28,6 +28,9 @@ jobs:
       - name: Applica correzione trackpad
         run: python3 apply_trackpad_fix.py .
 
+      - name: Correggi scatti del trackpad Samsung
+        run: python3 fix_trackpad_motion.py .
+
       - name: Elimina backup XML
         run: rm -f app_pojavlauncher/src/main/res/xml/*.before-trackpad-fix.bak
 
