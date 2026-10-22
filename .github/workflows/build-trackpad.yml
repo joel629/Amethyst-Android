@@ -27,6 +27,7 @@ jobs:
 
       - name: Applica correzione trackpad
         run: python3 apply_trackpad_fix.py .
+             rm -f app_pojavlauncher/src/main/res/xml/*.before-trackpad-fix.bak
 
       - name: Compila APK di debug
         run: |
